@@ -198,13 +198,13 @@
 				<div class="navy">
 					<ul>
 						<!-- Main menu -->
-						<li><a href="#">Home</a>
+						<li><a href="index.php">Home</a>
 							<!-- Submenu -->
 							<ul>
 
-								<li><a href="index.html">Home 1</a></li>
-								<li><a href="index-2.html"><span>Home 2</span></a></li>
-								<li><a href="index-3.html"><span>Home 3</span></a></li>
+								<li><a href="index.php">Home 1</a></li>
+								<li><a href="index-2.php"><span>Home 2</span></a></li>
+								<li><a href="index-3.php"><span>Home 3</span></a></li>
 
 							</ul>
 						</li>
@@ -213,7 +213,7 @@
 							<ul>
 								<li><a href="#">Footer</a>
 									<ul>
-										<li><a href="footer-one.html">Footer1</a></li>
+										<li><a href="footer-one.php">Footer1</a></li>
 										<li><a href="footer-two.html">Footer2</a></li>
 										<li><a href="footer-three.html">Footer3</a></li>
 									</ul>
