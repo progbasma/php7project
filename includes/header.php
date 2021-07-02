@@ -304,7 +304,7 @@
                                 <li><a href="checkout.php"><span>Checkout</span></a></li>
                                 <li><a href="wishlist.php"><span>Wishlist</span></a></li>
                                 <li><a href="signin.php"><span>Sign In</span></a></li>
-                                <li><a href="signup.html"><span>Sign Up</span></a></li>
+                                <li><a href="signup.php"><span>Sign Up</span></a></li>
                                 <li><a href="404.php"><span>404 Page</span></a></li>
                             </ul>
                         </li>
