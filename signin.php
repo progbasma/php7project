@@ -1,4 +1,64 @@
 <?php
+
+$msg="";
+session_start();
+if($_SERVER['REQUEST_METHOD']=='POST')
+{
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "store7";
+
+try {
+  $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  $stmt = $conn->prepare("SELECT * FROM users WHERE user_name=:username");
+  $stmt->bindParam(':username', $_POST['username']);
+  $stmt->execute();
+
+  // set the resulting array to associative
+  $result = $stmt->fetchAll();
+  if($result){
+
+	 foreach ($result as $row) {
+	  	if($row['user_password']==md5($_POST['password']))
+	  	{
+	  		$_SESSION['username']=$row['user_name'];
+
+	  		header('location:welcome.php');
+	  	}
+	  	else{
+	  		$msg="this password doesnot match for this username , <a href='#'> forgot passowrd? </a?";
+	  		echo $msg;
+
+
+	  	}
+	  }
+
+  }
+  else{
+
+  	$msg="this username not found in DB";
+  	echo $msg;
+  }
+ 
+
+
+ 
+} catch(PDOException $e) {
+  echo "Error: " . $e->getMessage();
+}
+$conn = null;
+
+
+}
+
+?>
+
+
+
+<?php
 include('includes/header.php');
 
 
@@ -20,8 +80,8 @@ include('includes/header.php');
 						<h4 class="nomargin">Sign In</h4>
 						<p class="mt5 mb20">Login to access your account.</p>
 
-						<input type="text" class="form-control uname" placeholder="Username" />
-						<input type="password" class="form-control pword" placeholder="Password" />
+						<input type="text" class="form-control uname" placeholder="Username" name="username" />
+						<input type="password" class="form-control pword" placeholder="Password" name="password" />
 						<a href="#"><small>Forgot Your Password?</small></a>
 						<button class="btn btn-success btn-block">Sign In</button>
 
