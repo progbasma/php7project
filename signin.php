@@ -29,8 +29,8 @@ try {
 	  		header('location:welcome.php');
 	  	}
 	  	else{
-	  		$msg="this password doesnot match for this username , <a href='#'> forgot passowrd? </a?";
-	  		echo $msg;
+	  		$msg="this password doesnot match for this username , <a href='#'> forgot passowrd? </a>";
+	  		
 
 
 	  	}
@@ -40,14 +40,14 @@ try {
   else{
 
   	$msg="this username not found in DB";
-  	echo $msg;
+  	
   }
  
 
 
  
 } catch(PDOException $e) {
-  echo "Error: " . $e->getMessage();
+ $msg="problem in sign in with this data";
 }
 $conn = null;
 
@@ -75,7 +75,19 @@ include('includes/header.php');
 			<div class="row">
 
 				<div class="col-md-5 col-md-offset-1">
+					<?php
+					if($msg):
+					?>
 
+					<h3 class="alert alert-danger p-2">
+						<?php echo $msg; ?>
+							
+					</h3>
+
+					<?php
+				     endif;
+
+					?>
 					<form method="post" action="#">
 						<h4 class="nomargin">Sign In</h4>
 						<p class="mt5 mb20">Login to access your account.</p>

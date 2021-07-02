@@ -1,6 +1,8 @@
 
 
 <?php
+$msg="";
+$signup=0;
 if($_SERVER['REQUEST_METHOD']=='POST')
 {
 
@@ -35,10 +37,12 @@ if($_SERVER['REQUEST_METHOD']=='POST')
 	  $stmt->execute();
 	  $last_id = $conn->lastInsertId();
 
-	  echo "New record created successfully with id = ".$last_id;
+	  $msg="New record created successfully with id = ".$last_id;
+	  $signup=1;
+	  
 	} 
 	catch(PDOException $e) {
-	  echo $e->getMessage();
+	  $msg= "error in inserting this user";
 	}
 
 	$conn = null;
@@ -104,7 +108,24 @@ include('includes/header.php');
 				</div><!-- col-sm-6 -->
 
 				<div class="col-md-6">
+					<?php
+					
+					if($signup==1):
 
+
+					?>
+					<h3 class="alert alert-success p-3">user created successfully</h3>
+					<?php
+					else:
+						if($_SERVER['REQUEST_METHOD']=='POST'):
+
+
+					?>
+					<h3 class="alert alert-danger p-3"><?php echo $msg ?></h3>
+					<?php
+					endif;
+
+					?>
 					<form method="post" action="#">
 
 						<h3 class="nomargin">Sign Up</h3>
@@ -428,6 +449,11 @@ include('includes/header.php');
 
 						<button class="btn btn-success btn-block">Sign Up</button>
 					</form>
+
+					<?php
+					endif;
+				   
+					?>
 				</div><!-- col-sm-6 -->
 
 			</div><!-- row -->
