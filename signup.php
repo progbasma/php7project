@@ -108,7 +108,7 @@ include('includes/header.php');
 					<form method="post" action="#">
 
 						<h3 class="nomargin">Sign Up</h3>
-						<p class="mt5 mb20">Already a member? <a href="signin.html"><strong>Sign In</strong></a></p>
+						<p class="mt5 mb20">Already a member? <a href="signin.php"><strong>Sign In</strong></a></p>
 
 						<label class="control-label">Name</label>
 						<div class="row mb10">

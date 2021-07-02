@@ -26,9 +26,9 @@ include('includes/slider.php');
 					<!-- Shopping items -->
 					<div class="shopping-item">
 						<!-- Image -->
-						<a href="single-product.html"><img class="img-responsive" src="img/product/shop_item_01.jpg" alt="" /></a>
+						<a href="single-product.php"><img class="img-responsive" src="img/product/shop_item_01.jpg" alt="" /></a>
 						<!-- Shopping item name / Heading -->
-						<h4><a href="single-product.html">Brown Mini Skirt</a><span class="color pull-right">$49</span></h4>
+						<h4><a href="single-product.php">Brown Mini Skirt</a><span class="color pull-right">$49</span></h4>
 						<div class="clearfix"></div>
 						<!-- Buy now button -->
 						<div class="visible-xs">
@@ -44,9 +44,9 @@ include('includes/slider.php');
 					<!-- Shopping items -->
 					<div class="shopping-item">
 						<!-- Image -->
-						<a href="single-product.html"><img class="img-responsive" src="img/product/shop_item_03.jpg" alt="" /></a>
+						<a href="single-product.php"><img class="img-responsive" src="img/product/shop_item_03.jpg" alt="" /></a>
 						<!-- Shopping item name / Heading -->
-						<h4><a href="single-product.html">Wool Two-Piece Suit</a><span class="color pull-right">$49</span></h4>
+						<h4><a href="single-product.php">Wool Two-Piece Suit</a><span class="color pull-right">$49</span></h4>
 						<div class="clearfix"></div>
 						<!-- Buy now button -->
 						<div class="visible-xs">
@@ -64,9 +64,9 @@ include('includes/slider.php');
 					<!-- Shopping items -->
 					<div class="shopping-item">
 						<!-- Image -->
-						<a href="single-product.html"><img class="img-responsive" src="img/product/shop_item_05.jpg" alt="" /></a>
+						<a href="single-product.php"><img class="img-responsive" src="img/product/shop_item_05.jpg" alt="" /></a>
 						<!-- Shopping item name / Heading -->
-						<h4><a href="single-product.html">Vintage Sunglasses</a><span class="color pull-right">$49</span></h4>
+						<h4><a href="single-product.php">Vintage Sunglasses</a><span class="color pull-right">$49</span></h4>
 						<div class="clearfix"></div>
 						<!-- Buy now button -->
 						<div class="visible-xs">
@@ -82,9 +82,9 @@ include('includes/slider.php');
 					<!-- Shopping items -->
 					<div class="shopping-item">
 						<!-- Image -->
-						<a href="single-product.html"><img class="img-responsive" src="img/product/shop_item_08.jpg" alt="" /></a>
+						<a href="single-product.php"><img class="img-responsive" src="img/product/shop_item_08.jpg" alt="" /></a>
 						<!-- Shopping item name / Heading -->
-						<h4><a href="single-product.html">Nulla luctus</a><span class="color pull-right">$49</span></h4>
+						<h4><a href="single-product.php">Nulla luctus</a><span class="color pull-right">$49</span></h4>
 						<div class="clearfix"></div>
 						<!-- Buy now button -->
 						<div class="visible-xs">
@@ -102,9 +102,9 @@ include('includes/slider.php');
 					<!-- Shopping items -->
 					<div class="shopping-item">
 						<!-- Image -->
-						<a href="single-product.html"><img class="img-responsive" src="img/product/shop_item_02.jpg" alt="" /></a>
+						<a href="single-product.php"><img class="img-responsive" src="img/product/shop_item_02.jpg" alt="" /></a>
 						<!-- Shopping item name / Heading -->
-						<h4><a title="Glory High Shoes" href="single-product.html">Glory High Shoes</a><span class="color pull-right">$49</span></h4>
+						<h4><a title="Glory High Shoes" href="single-product.php">Glory High Shoes</a><span class="color pull-right">$49</span></h4>
 						<div class="clearfix"></div>
 						<!-- Buy now button -->
 						<div class="visible-xs">
@@ -140,9 +140,9 @@ include('includes/slider.php');
 					<!-- Shopping items -->
 					<div class="shopping-item">
 						<!-- Image -->
-						<a href="single-product.html"><img class="img-responsive" src="img/product/shop_item_06.jpg" alt="" /></a>
+						<a href="single-product.php"><img class="img-responsive" src="img/product/shop_item_06.jpg" alt="" /></a>
 						<!-- Shopping item name / Heading -->
-						<h4><a href="single-product.html">Solid Blue Polo Shirt</a><span class="color pull-right">$49</span></h4>
+						<h4><a href="single-product.php">Solid Blue Polo Shirt</a><span class="color pull-right">$49</span></h4>
 						<div class="clearfix"></div>
 						<!-- Buy now button -->
 						<div class="visible-xs">
@@ -196,9 +196,9 @@ include('includes/slider.php');
 					<!-- Shopping items -->
 					<div class="shopping-item">
 						<!-- Image -->
-						<a href="single-product.html"><img class="img-responsive" src="img/product/product_item_02a.jpg" alt="" /></a>
+						<a href="single-product.php"><img class="img-responsive" src="img/product/product_item_02a.jpg" alt="" /></a>
 						<!-- Shopping item name / Heading -->
-						<h4><a href="single-product.html">Quasi Architects</a><span class="color pull-right">$49</span></h4>
+						<h4><a href="single-product.php">Quasi Architects</a><span class="color pull-right">$49</span></h4>
 						<div class="clearfix"></div>
 						<!-- Buy now button -->
 						<div class="visible-xs">
@@ -214,9 +214,9 @@ include('includes/slider.php');
 					<!-- Shopping items -->
 					<div class="shopping-item">
 						<!-- Image -->
-						<a href="single-product.html"><img class="img-responsive" src="img/product/product_item_01b.jpg" alt="" /></a>
+						<a href="single-product.php"><img class="img-responsive" src="img/product/product_item_01b.jpg" alt="" /></a>
 						<!-- Shopping item name / Heading -->
-						<h4><a href="single-product.html">Quasi Architects</a><span class="color pull-right">$49</span></h4>
+						<h4><a href="single-product.php">Quasi Architects</a><span class="color pull-right">$49</span></h4>
 						<div class="clearfix"></div>
 						<!-- Buy now button -->
 						<div class="visible-xs">
@@ -232,9 +232,9 @@ include('includes/slider.php');
 					<!-- Shopping items -->
 					<div class="shopping-item">
 						<!-- Image -->
-						<a href="single-product.html"><img class="img-responsive" src="img/product/product_item_01b.jpg" alt="" /></a>
+						<a href="single-product.php"><img class="img-responsive" src="img/product/product_item_01b.jpg" alt="" /></a>
 						<!-- Shopping item name / Heading -->
-						<h4><a href="single-product.html">Quasi Architects</a><span class="color pull-right">$49</span></h4>
+						<h4><a href="single-product.php">Quasi Architects</a><span class="color pull-right">$49</span></h4>
 						<div class="clearfix"></div>
 						<!-- Buy now button -->
 						<div class="visible-xs">

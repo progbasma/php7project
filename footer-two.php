@@ -1,3 +1,8 @@
+<?php
+include('includes/header.php');
+
+
+?>
 
 <!-- end header -->
 
@@ -20,32 +25,11 @@
 
 
 
+
+
+
 <!-- start footer area -->
 <footer class="footer-area-content">
-
-
-	<!-- Newsletter -->
-	<div id="newsletter">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<h3><i class="fa fa-envelope-o"></i>Keep in touch, Join our newsletter</h3>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3">
-					<div class="col-sm-8">
-						<input type="email" required="required" placeholder="Your Email Address" id="email" class="form-control" name="email">
-					</div>
-					<div class="col-sm-4">
-						<a href="#" class="btn btn-subscribe">Subscribe</a>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- END: Newsletter -->
 
 	<div class="container">
 		<div class="footer-wrapper style-3">
@@ -60,55 +44,44 @@
 							</div>
 							<div class="clear"></div>
 						</div>
-						<div class="col-md-2 col-sm-4">
-							<h3 class="column-title">Customer Care</h3>
-							<ul class="column">
-								<li><a href="#">Terms & Condition</a></li>
-								<li><a href="#">Contact Us</a></li>
-								<li><a href="#">Shipping Charge</a></li>
-								<li><a href="#">Shipping Track</a></li>
-								<li><a href="#">Payment Method</a></li>
-								<li><a href="#">Order History</a></li>
-								<li><a href="#">Returns</a></li>
-							</ul>
-							<div class="clear"></div>
-						</div>
-						<div class="col-md-2 col-sm-4">
-							<h3 class="column-title">Your Account</h3>
-							<ul class="column">
-								<li><a href="#">My Account</a></li>
-								<li><a href="#">Wishlist</a></li>
-								<li><a href="#">Affiliate Dashboard</a></li>
-								<li><a href="#">Billing Address</a></li>
-								<li><a href="#">Cancel Order</a></li>
-								<li><a href="#">Order History</a></li>
-								<li><a href="#">Returns</a></li>
-							</ul>
-							<div class="clear"></div>
-						</div>
-						<div class="col-md-2 col-sm-4">
-							<h3 class="column-title">Shop Information</h3>
-							<ul class="column">
-								<li><a href="#">About Company</a></li>
-								<li><a href="#">Become Member</a></li>
-								<li><a href="#">License Details</a></li>
-								<li><a href="#">Custom Service</a></li>
-								<li><a href="#">Tax Information</a></li>
-								<li><a href="#">Order History</a></li>
-								<li><a href="#">Job & Vacancies</a></li>
-							</ul>
-							<div class="clear"></div>
-						</div>
-						<div class="clearfix visible-sm-block"></div>
 						<div class="col-md-3">
-							<h3 class="column-title">Company working hours</h3>
-							<div class="footer-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</div>
-							<div class="footer-description">
-								<b>Monday-Friday:</b> 8.30 a.m. - 5.30 p.m.<br>
-								<b>Saturday:</b> 9.00 a.m. - 2.00 p.m.<br>
-								<b>Sunday:</b> Closed
-							</div>
-							<div class="clear"></div>
+							<div class="index-three-footer-widget how-to-buy">
+								<h3 class="heading2">How to Buy</h3>
+								<ul>
+									<li><a href="#" title="">Become an Amazon Vendor</a></li>
+									<li><a href="#" title="">Advertise Your Products</a></li>
+									<li><a href="#" title="">Sell on Amazon Business</a></li>
+									<li><a href="#" title="">Subscribe to receive inspiration</a></li>
+								</ul>
+							</div><!-- Widget -->
+						</div>
+						<div class="col-md-3">
+							<div class="index-three-footer-widget customer-services">
+								<h3 class="heading2">Customer Service</h3>
+								<ul>
+									<li><a href="#" title="">Refund Policy</a></li>
+									<li><a href="#" title="">How to Shop on Flaiva</a></li>
+									<li><a href="#" title="">Track Your Order</a></li>
+									<li><a href="#" title="">Shipping Policy</a></li>
+								</ul>
+							</div><!-- Widget -->
+						</div>
+						<div class="col-md-3">
+							<div class="index-three-footer-widget news-letter">
+								<h3 class="heading2">NewsLetter Signup</h3>
+								<p>Subscribe to receive inspiration, ideas, and news in your inbox.</p>
+								<form>
+									<input type="text" placeholder="Enter your Email" />
+									<button type="submit"><i class="fa fa-search"></i></button>
+								</form>
+								<ul class="social-buttons">
+									<li><a href="#" title=""><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#" title=""><i class="fa fa-google-plus"></i></a></li>
+									<li><a href="#" title=""><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#" title=""><i class="fa fa-rss"></i></a></li>
+									<li><a href="#" title=""><i class="fa fa-tumblr"></i></a></li>
+								</ul>
+							</div><!-- Widget -->
 						</div>
 					</div>
 				</div>
@@ -165,18 +138,26 @@
 ============================================ -->
 <script src="js/jquery.scrollUp.js"></script>
 <script src="js/menu.js"></script>
-<!-- new collection section script -->
-<script src="js/swiper/idangerous.swiper.min.js"></script>
-<script src="js/swiper/swiper.custom.js"></script>
+
+
+<script src="js/pluginse209.js?v=1.0.0"></script>
 
 <!-- Magnific Popup -->
 <script src="js/jquery.magnific-popup.min.js"></script>
 
 <script src="js/jquery.countdown.min.js"></script>
 
-<!-- SLIDER REVOLUTION SCRIPTS  -->
-<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
-<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+<script src="js/jquery.scrolly.js"></script>
+
+
+<!-- External libraries: jQuery & GreenSock -->
+<script src="layerslider/js/greensock.js" type="text/javascript"></script>
+<!-- LayerSlider script files -->
+<script src="layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
+<script src="layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+
+
 <!-- Owl carousel -->
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
@@ -184,102 +165,45 @@
 
 
 <script type="text/javascript">
+	$(document).ready(function() {
 
-	/*-----------------------------------------------------------------------------------*/
-	/* Product Carousel
-	 /*-----------------------------------------------------------------------------------*/
-	if (jQuery().owlCarousel) {
-		var productCarousel = $("#product-carousel");
-		productCarousel.owlCarousel({
-			loop: true,
-			dots: false,
-			responsive: {
-				0: {
-					items: 1
-				},
-				480: {
-					items: 2
-				},
-				900: {
-					items: 3
-				},
-				1100: {
-					items: 4
-				}
-			}
+		"use strict";
+
+		//** Slider  **//
+		jQuery("#layerslider").layerSlider({
+			responsive: true,
+			responsiveUnder: 1170,
+			layersContainer: 1170,
+			skin: 'v5',
+			hoverPrevNext: true,
+			navPrevNext: true,
+			navStartStop: false,
+			navButtons: false,
+			skinsPath: 'layerslider/skins/'
 		});
 
-		// Custom Navigation Events
-		$(".product-control-nav .next").on("click", function() {
-			productCarousel.trigger('next.owl.carousel');
+
+		/*=================== Parallax ===================*/
+		$('.parallax').scrolly({bgParallax: true});
+
+
+		/* Owl carousel */
+		$(".owl-carousel").owlCarousel({
+			slideSpeed : 500,
+			rewindSpeed : 1000,
+			mouseDrag : true,
+			stopOnHover : true
+		});
+		/* Own navigation */
+		$(".owl-nav-prev").click(function(){
+			$(this).parent().next(".owl-carousel").trigger('owl.prev');
+		});
+		$(".owl-nav-next").click(function(){
+			$(this).parent().next(".owl-carousel").trigger('owl.next');
 		});
 
-		$(".product-control-nav .prev").on("click", function() {
-			productCarousel.trigger('prev.owl.carousel');
-		});
-	}
 
-	/* Main Slider */
-	$('.tp-banner0').show().revolution({
-		dottedOverlay: "none",
-		delay: 5000,
-		startWithSlide: 0,
-		startwidth: 869,
-		startheight: 520,
-		hideThumbs: 10,
-		hideTimerBar: "on",
-		thumbWidth: 50,
-		thumbHeight: 50,
-		thumbAmount: 4,
-		navigationType: "bullet",
-		navigationArrows: "solo",
-		navigationStyle: "round",
-		touchenabled: "on",
-		onHoverStop: "on",
-		swipe_velocity: 0.7,
-		swipe_min_touches: 1,
-		swipe_max_touches: 1,
-		drag_block_vertical: false,
-		parallax: "mouse",
-		parallaxBgFreeze: "on",
-		parallaxLevels: [7, 4, 3, 2, 5, 4, 3, 2, 1, 0],
-		keyboardNavigation: "off",
-		navigationHAlign: "right",
-		navigationVAlign: "bottom",
-		navigationHOffset: 30,
-		navigationVOffset: 30,
-		soloArrowLeftHalign: "left",
-		soloArrowLeftValign: "center",
-		soloArrowLeftHOffset: 50,
-		soloArrowLeftVOffset: 8,
-		soloArrowRightHalign: "right",
-		soloArrowRightValign: "center",
-		soloArrowRightHOffset: 50,
-		soloArrowRightVOffset: 8,
-		shadow: 0,
-		fullWidth: "on",
-		fullScreen: "off",
-		spinner: "spinner4",
-		stopLoop: "on",
-		stopAfterLoops: -1,
-		stopAtSlide: -1,
-		shuffle: "off",
-		autoHeight: "off",
-		forceFullWidth: "off",
-		hideThumbsOnMobile: "off",
-		hideNavDelayOnMobile: 1500,
-		hideBulletsOnMobile: "off",
-		hideArrowsOnMobile: "off",
-		hideThumbsUnderResolution: 0,
-		hideSliderAtLimit: 0,
-		hideCaptionAtLimit: 500,
-		hideAllCaptionAtLilmit: 500,
-		videoJsPath: "rs-plugin/videojs/",
-		fullScreenOffsetContainer: ""
 	});
-
-
-
 </script>
 
 
