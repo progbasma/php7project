@@ -1,3 +1,11 @@
+
+<?php
+session_start();
+
+
+
+?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -199,37 +207,11 @@
                 <div class="navy">
                     <ul>
                         <!-- Main menu -->
-                        <li><a href="#">Home</a>
-                            <!-- Submenu -->
-                            <ul>
-
-                                <li><a href="index.php">Home 1</a></li>
-                                <li><a href="index-2.html"><span>Home 2</span></a></li>
-                                <li><a href="index-3.html"><span>Home 3</span></a></li>
-
-                            </ul>
-                        </li>
-
-                        <li><a href="#">Features</a>
-                            <ul>
-                                <li><a href="#">Footer</a>
-                                    <ul>
-                                        <li><a href="footer-one.html">Footer1</a></li>
-                                        <li><a href="footer-two.php">Footer2</a></li>
-                                        <li><a href="footer-three.html">Footer3</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Price Table</a>
-                                    <ul>
-                                        <li><a href="price-table-one.php">Price Table1</a></li>
-                                        <li><a href="price-table-two.php">Price Table2</a></li>
-
-                                    </ul>
-                                </li>
-
-                            </ul>
-                        </li>
-
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="shop.php">shop</a></li>
+                        <li><a href="about.php">About Us</a></li>
+                        <li><a href="contact.php">Contact Us</a></li>
+                        <li><a href="blog.php">Blog</a></li>
                         <li><a href="#">Category</a>
                             <ul>
                                 <li><a href="#">Laptop</a>
@@ -285,16 +267,37 @@
                                 </li>
                             </ul>
                         </li>
+                        <?php
+                        if(isset($_SESSION['username'])):
+                        ?>
 
-                        <li><a href="#">Blog</a>
+                        <li><a href="#">welcome  <?php echo $_SESSION['username']; ?></a>
                             <ul>
-                                <li><a href="blog.php"><span>Blog Default</span></a></li>
-                                <li><a href="blog-masonry.html"><span>Blog Masonry</span></a></li>
-                                <li><a href="blog-full-width.html"><span>Blog Full Width</span></a></li>
-                                <li><a href="single-post.html"><span>Single Page 1</span></a></li>
-                                <li><a href="single-post-v2.html"><span>Single Page 2</span></a></li>
+                               
+                                <li><a href="signin.php"><span>profile</span></a></li>
+                                <li><a href="signout.php"><span>sign out</span></a></li>
+                               
                             </ul>
                         </li>
+
+                        <?php 
+                            else:
+                         ?>
+
+                        <li><a href="#">user</a>
+                            <ul>
+                               
+                                <li><a href="signin.php"><span>Sign In</span></a></li>
+                                <li><a href="signup.php"><span>Sign Up</span></a></li>
+                                <li><a href="forgotpassword.php"><span>forgot password</span></a></li>
+                               
+                            </ul>
+                        </li>
+                        <?php
+
+                    endif;
+                        ?>
+                        
 
                         <li><a href="#">Pages</a>
                             <ul>
@@ -309,8 +312,7 @@
                             </ul>
                         </li>
 
-                        <li><a href="about.php">About Us</a></li>
-                        <li><a href="contact.php">Contact Us</a></li>
+                       
                     </ul>
                 </div>
             </div>

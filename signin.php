@@ -1,7 +1,19 @@
+
+
+
+
 <?php
 
 $msg="";
-session_start();
+include('includes/header.php');
+
+
+?>
+<!-- end header -->
+
+<?php
+
+
 if($_SERVER['REQUEST_METHOD']=='POST')
 {
 
@@ -26,7 +38,10 @@ try {
 	  	{
 	  		$_SESSION['username']=$row['user_name'];
 
-	  		header('location:welcome.php');
+	  		header('location:index.php');
+	  		echo "welcome";
+           
+
 	  	}
 	  	else{
 	  		$msg="this password doesnot match for this username , <a href='#'> forgot passowrd? </a>";
@@ -57,13 +72,6 @@ $conn = null;
 ?>
 
 
-
-<?php
-include('includes/header.php');
-
-
-?>
-<!-- end header -->
 
 <!-- start main content -->
 <main class="container">
@@ -158,3 +166,4 @@ include('includes/footer.php');
 
 
 </html>
+
