@@ -17,7 +17,7 @@ include('includes/header.php');
 
 if($_SERVER['REQUEST_METHOD']=='POST')
 {
-
+  
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -38,9 +38,23 @@ try {
 	  	if($row['user_password']==md5($_POST['password']))
 	  	{
 	  		$_SESSION['username']=$row['user_name'];
+	  		if(isset($_POST['check']))
+			
+	  		{
+	  			
+	  			setcookie("Ecommerceshop",$row['user_name'] , time()+3600*24*30);  /* expire in 30 day */
+	  			
 
+
+	  		}
+	  		else{
+	  			$_SESSION['username']=$row['user_name'];
+	  			$_SESSION['state']='dontremember';
+
+	  		}
 	  		header('location:index.php');
-	  		echo "welcome";
+	  		
+	  		
            
 
 	  	}
@@ -103,6 +117,10 @@ $conn = null;
 
 						<input type="text" class="form-control uname" placeholder="Username" name="username" />
 						<input type="password" class="form-control pword" placeholder="Password" name="password" />
+						 <div class="form-group form-check">
+					    <input type="checkbox" name="check" class="form-check-input" value="checked" id="check" >
+					    <label class="form-check-label" for="check">remember me</label>
+					  </div>
 						<a href="#"><small>Forgot Your Password?</small></a>
 						<button class="btn btn-success btn-block">Sign In</button>
 

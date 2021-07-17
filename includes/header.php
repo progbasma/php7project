@@ -1,6 +1,7 @@
 
 <?php
 ob_start();
+session_set_cookie_params(0);
 session_start();
 
 
@@ -54,6 +55,7 @@ session_start();
     <link rel="stylesheet" type="text/css" href="css/revolutionslider_settings.css" media="screen" />
 
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+       
 </head>
 
 <body class="style-14">
@@ -269,7 +271,7 @@ session_start();
                             </ul>
                         </li>
                         <?php
-                        if(isset($_SESSION['username'])):
+                        if(isset($_COOKIE['Ecommerceshop']) || isset($_SESSION['username'])):
                         ?>
 
                         <li><a href="#">welcome  <?php echo $_SESSION['username']; ?></a>
